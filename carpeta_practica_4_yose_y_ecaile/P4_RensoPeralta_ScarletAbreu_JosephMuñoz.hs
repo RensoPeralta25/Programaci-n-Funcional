@@ -24,10 +24,21 @@ safeDivList n (x:xs) = safeDivList (n `div` x) xs
 --
 data Operacion = Suma Int Int | Resta Int Int | Mult Int Int | Div Int Int
 aplicarOp :: Operacion -> Maybe Int
-aplicarOp (Suma a b) = a + b
-aplicarOp (Resta a b) = a - b
-aplicarOp (Mult a b) = a * b
+aplicarOp (Suma a b) = Just (a + b)
+aplicarOp (Resta a b) = Just (a - b)
+aplicarOp (Mult a b) = Just (a * b)
 aplicarOp (Div a 0) = Nothing
 aplicarOp (Div a b) = Just (a `div` b)
 
-
+-- Parte D
+main :: IO ()
+main = do
+    print (sumNum 5) -- Debería imprimir 15
+    print (prodLista [1, 2, 3, 4]) -- Debería imprimir 24
+    print (safeDiv 10 2) -- Debería imprimir Just 5.0
+    print (safeDiv 10 0) -- Debería imprimir Nothing
+    print (safeDivList 100 [2, 5, 0]) -- Debería imprimir Nothing
+    print (safeDivList 100 [2, 5, 2]) -- Debería imprimir Just 10
+    print (aplicarOp (Suma 3 4)) -- Debería imprimir Just 7
+    print (aplicarOp (Div 10 0)) -- Debería imprimir Nothing
+    print (aplicarOp (Div 10 2)) -- Debería imprimir Just 5
