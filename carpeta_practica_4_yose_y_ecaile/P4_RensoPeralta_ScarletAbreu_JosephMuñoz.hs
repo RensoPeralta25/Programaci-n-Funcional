@@ -42,3 +42,9 @@ main = do
     print (aplicarOp (Suma 3 4)) -- Debería imprimir Just 7
     print (aplicarOp (Div 10 0)) -- Debería imprimir Nothing
     print (aplicarOp (Div 10 2)) -- Debería imprimir Just 5
+
+-- Parte E - Que fue lo mas interesante o complicado de esta practica y por que?
+
+-- Renso: Para mi lo mas complicado fue la parte B, en donde teniamos que usar division encadenada, ya que la logica que conllevaba aplicar lo requerido nos tomo algo de tiempo.
+-- Scarlet: Lo mas complicado de la practica sin duda fue aplicar la parte B de division encadenada, ya que por la sintaxis era algo nuevo para nosotros poner en codigo la solucion pensada.
+-- Joseph: Lo que me parecio mas dificil fue al igual que mis compañeros, la parte B en donde teniamos que aplicar la division encadenada, ya que nos tomo mucho tiempo aplicar la logica para la solucion del problema.
