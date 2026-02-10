@@ -8,4 +8,3 @@ main = do
     print("Ingrese segundo numero: ")
     y <- readLn
     print (prom x y)
-
