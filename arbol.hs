@@ -13,7 +13,7 @@ arbol = Nodo 5
                 (Nodo 13 (Vacio) (Vacio)))
             (Nodo 11 (Vacio) (Vacio)))
 
-preorder ::  Arbol a -> [a]
+preorder :: Arbol a -> [a]
 preorder Vacio = []
 preorder (Nodo x izq der) = [x] ++ preorder izq ++ preorder der
 
