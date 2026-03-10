@@ -16,3 +16,4 @@ instance Foldable Tree where
  foldr f acc Empty = acc
  foldr f acc (Node x l r) =
     foldr f (f x (foldr f acc r)) l
+
