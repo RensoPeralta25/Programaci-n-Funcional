@@ -1,0 +1,1 @@
+/Users/renso_peralta/Desktop/PUCMM/Cuatrimestre\ Ene.-Abril.\ 2026/Programacion\ Funcional/carperta_ejercicios/clase_rust/target/debug/clase_rust: /Users/renso_peralta/Desktop/PUCMM/Cuatrimestre\ Ene.-Abril.\ 2026/Programacion\ Funcional/carperta_ejercicios/clase_rust/src/main.rs
